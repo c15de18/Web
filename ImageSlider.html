@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Image Slider</title>
+    <link rel="stylesheet" href="ImageSlider.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide fade">
+                <img src="Images/image1.jpg" alt="Machu Picchu">
+                <div class="caption">Machu Picchu</div>
+                <p class="description">An ancient Incan city set high in the Andes Mountains in Peru.</p>
+            </div>
+            <div class="slide fade">
+                <img src="Images/image2.jpg" alt="Mount Everest">
+                <div class="caption">Mount Everest</div>
+                <p class="description">The highest mountain in the world, standing at 8,848 meters.</p>
+            </div>
+            <div class="slide fade">
+                <img src="Images/image3.jpg" alt="Grand Canyon">
+                <div class="caption">Grand Canyon</div>
+                <p class="description">A massive canyon in Arizona, USA, carved by the Colorado River.</p>
+            </div>
+            <div class="slide fade">
+                <img src="Images/image4.jpg" alt="Great Barrier Reef">
+                <div class="caption">Great Barrier Reef</div>
+                <p class="description">The world's largest coral reef system off the coast of Australia.</p>
+            </div>
+            <div class="slide fade">
+                <img src="Images/image5.jpg" alt="Sahara Desert">
+                <div class="caption">Sahara Desert</div>
+                <p class="description">The largest hot desert in the world, covering much of North Africa.</p>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+
+        <!-- Thumbnails -->
+        <div class="thumbnails">
+            <img src="Images/image1.jpg" onclick="currentSlide(0)">
+            <img src="Images/image2.jpg" onclick="currentSlide(1)">
+            <img src="Images/image3.jpg" onclick="currentSlide(2)">
+            <img src="Images/image4.jpg" onclick="currentSlide(3)">
+            <img src="Images/image5.jpg" onclick="currentSlide(4)">
+        </div>
+    </div>
+
+    <script src="ImageSlider.js"></script>
+</body>
+</html>
